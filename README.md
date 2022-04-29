@@ -1,2 +1,2 @@
 # TechStore
-A simple online store webpage
+A simple online store website
