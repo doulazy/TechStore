@@ -1,0 +1,253 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Logo {
+    font-size: 3rem;
+    color: #0e8ce4;
+    font-weight: bold;
+}
+
+.searchBar {
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.searchBar input, .searchBar .dropdown {
+    border: none;
+    background-color: #fff;
+    color: #a29c9c;
+    outline: none;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+.searchBar input {
+    border-right: 1px solid #e8e8e8;
+    font-size: 1.1rem;
+}
+
+.searchBar input::placeholder {
+    color: #a29c9c;
+}
+
+.searchBar button {
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    background-color: #0e8ce4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.cartWishList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+}
+
+.cart, .wishList {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.icon {
+    position: relative;
+    font-size: 1.2rem;
+    color: #e8e8e8;
+    background-color: #0e8ce4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+    color: #a29c9c;
+}
+
+.information .title {
+    color: #000;
+}
+
+.information .cost, .information .itemsNumber {
+    transform: translateY(-20px);
+    width: 50px;
+}
+
+.badge {
+    background-color: #ff0000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 5px #e2dddd;
+    width: 100vw;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.navContainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.navLinks {
+    flex: 3;
+}
+
+.navLinksList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #a29c9c;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+}
+
+.navLink {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLink:hover {
+    color: #0e8ce4;
+}
+
+.specialLink {
+    background-color: #0e8ce4;
+    color: #fff;
+    height: 100%;
+    padding: 10px 30px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.specialLink:hover {
+    box-shadow: 0px 0px 5px 5px #c0c7cc;
+}
+
+.navDropMenu {
+    /* transform: translateY(80px); */
+    flex: 1;
+    width: 80%;
+    height: 100%;
+}
+
+.navDropMenu .navDropMenuList {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.titleContainer {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #0e8ce4;
+    justify-content: center;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+}
+
+.titleMenu {
+    height: 80%;
+    color: #fff;
+    width: 80%;
+    border-radius: 2px;
+}
+
+.menuIcon {
+    margin: 10px;
+}
+
+.items {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    display: block;
+    /* position: absolute; */
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 5px 5px #f1f1f1;
+    border-radius: 2px;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.navDropMenuItem {
+    background-color: #fff;
+    flex: 1;
+    z-index: 2;
+    transition: all 0.4s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 97%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20px 5px;
+}
+
+.navDropMenuItem:hover {
+    color: #0e8ce4;
+}
+
+.navDropMenuItem:not(:last-child) {
+    border-bottom: 1px solid #e2dddd;
+
+}
