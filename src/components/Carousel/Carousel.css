@@ -1,0 +1,7 @@
+.carouselContainer {
+    
+    border: 1px solid red;
+    width: 300%;
+    overflow-x: hidden;
+    display: flex;
+}
