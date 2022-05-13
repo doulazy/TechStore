@@ -2,7 +2,7 @@
     margin-top: 50px;
     padding: 30px;
     background-color: #e6f0f7;
-    z-index: 1;
+    z-index: 1;  
 }
 
 .hotBestContainer {
@@ -15,4 +15,82 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+}
+
+.hotBestItemsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hotBestItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+
+.hotBestItemImg {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.hotBestItemImg img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.hotBestItemInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.hotBestItemInfo .category {
+    color: rgb(197, 191, 191);
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100px;
+}
+
+.hotBestItemInfo .category:hover {
+    color: #77bff7;
+    cursor: pointer;
+}
+
+.hotBestItemInfo .productName {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hotBestItemInfo .prices {
+    display: flex;
+    align-items: center;
+}
+
+.hotBestItemInfo .prices .oldPrice {
+    text-decoration: line-through;
+    color: rgb(197, 191, 191);
+    font-size: 0.9rem;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.hotBestItemInfo .prices .newPrice {
+    color: #b80808;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
